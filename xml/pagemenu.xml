@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: pagemenu.xml 1903 2012-03-06 01:05:37Z TobiasH87 $ -->
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/page-menu.xsd">
+	<import>
+		<pagemenuitem name="wcf.header.menu.minecraft.map">
+			<iconmedium>minecraftMapM.png</iconmedium>
+			<iconsmall>minecraftMapS.png</iconsmall>
+			<position>header</position>
+			<permissions>user.managepages.canViewMinecraftMap</permissions>
+			<link>index.php?page=MinecraftMap</link>
+			<options>module_minecraft_map</options>
+		</pagemenuitem>
+	</import>
+</data>

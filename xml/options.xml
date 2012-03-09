@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: options.xml 1910 2012-03-09 18:39:15Z TobiasH87 $ -->
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/options.xsd">
+	<import>
+		<categories>
+			<!-- page category -->
+			<category name="minecraft.map">
+				<showorder>34</showorder>
+				<options>module_minecraft_map</options>
+			</category>
+			<category name="minecraft.map.general">
+				<parent>minecraft.map</parent>
+				<showorder>1</showorder>
+			</category>
+			<category name="minecraft.map.online.check">
+				<parent>minecraft.map</parent>
+				<showorder>2</showorder>
+			</category>
+			<!-- /page category -->
+			<!-- module category -->
+			<category name="module.content.managepages">
+				<parent>module.content</parent>
+			</category>
+			<!-- /module category -->
+		</categories>
+		<options>
+			<!-- module options -->
+			<option name="module_minecraft_map">
+				<categoryname>module.content.managepages</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>1</defaultvalue>
+			</option>
+			<!-- /module options -->
+			<!-- page options -->
+			<option name="minecraft_map_url">
+				<categoryname>minecraft.map.general</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue><![CDATA[]]></defaultvalue>
+				<!--<enableoptions><![CDATA[minecraft_map_url_show]]></enableoptions>-->
+				<showorder>1</showorder>
+			</option>
+			<option name="minecraft_map_url_show">
+				<categoryname>minecraft.map.general</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="minecraft_map_height">
+				<categoryname>minecraft.map.general</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue>500</defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<option name="minecraft_map_online_check">
+				<categoryname>minecraft.map.online.check</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<enableoptions><![CDATA[minecraft_map_fqdn,minecraft_map_port]]></enableoptions>
+				<showorder>1</showorder>
+			</option>
+			<option name="minecraft_map_fqdn">
+				<categoryname>minecraft.map.online.check</categoryname>
+				<optiontype>text</optiontype>
+				<defaultvalue><![CDATA[map.minecraft.net]]></defaultvalue>
+				<showorder>2</showorder>
+			</option>
+			<option name="minecraft_map_port">
+				<categoryname>minecraft.map.online.check</categoryname>
+				<optiontype>integer</optiontype>
+				<defaultvalue><![CDATA[80]]></defaultvalue>
+				<showorder>3</showorder>
+			</option>
+			<!-- /page options -->
+		</options>
+	</import>
+</data>

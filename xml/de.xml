@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: de.xml 1911 2012-03-09 18:57:07Z TobiasH87 $ -->
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/language.xsd" languagecode="de">
+	<category name="wcf.acp.option">
+		<!-- module -->
+		<item name="wcf.acp.option.category.module.content.managepages"><![CDATA[Seitenverwaltung]]></item>
+		<item name="wcf.acp.option.category.module.content.managepages.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.module_minecraft_map"><![CDATA[Minecraft Karte]]></item>
+		<item name="wcf.acp.option.module_minecraft_map.description"><![CDATA[Aktiviert die Minecraft Karte.]]></item>
+		<!-- /module -->
+		<!-- page -->
+		<item name="wcf.acp.option.category.minecraft.map"><![CDATA[Minecraft Karte]]></item>
+		<item name="wcf.acp.option.category.minecraft.map.description"><![CDATA[<a href="{@RELATIVE_WCF_DIR}acp/dereferrer.php?url={"http://www.minecraft.net/"|rawurlencode}" class="externalURL">Minecraft</a> | <a href="{@RELATIVE_WCF_DIR}acp/dereferrer.php?url={"http://overviewer.org/"|rawurlencode}" class="externalURL">Minecraft Overviewer</a> | <a href="{@RELATIVE_WCF_DIR}acp/dereferrer.php?url={"http://bukkit.org/"|rawurlencode}" class="externalURL">Bukkit</a> &amp; <a href="{@RELATIVE_WCF_DIR}acp/dereferrer.php?url={"http://dev.bukkit.org/server-mods/dynmap/"|rawurlencode}" class="externalURL">Dynmap</a>]]></item>
+		<item name="wcf.acp.option.category.minecraft.map.general"><![CDATA[Allgemein]]></item>
+		<item name="wcf.acp.option.category.minecraft.map.general.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.category.minecraft.map.online.check"><![CDATA[Map Online Check]]></item>
+		<item name="wcf.acp.option.category.minecraft.map.online.check.description"><![CDATA[]]></item>
+		
+		<item name="wcf.acp.option.minecraft_map_url"><![CDATA[URL]]></item>
+		<item name="wcf.acp.option.minecraft_map_url.description"><![CDATA[Geben Sie die URL zur Karte ein, z.B. http://map.minecraft.net:8123]]></item>
+		<item name="wcf.acp.option.minecraft_map_url_show"><![CDATA[URL anzeigen]]></item>
+		<item name="wcf.acp.option.minecraft_map_url_show.description"><![CDATA[Aktivieren Sie diese Option, wenn Sie die URL unter der Karte anzeigen möchten.]]></item>
+		<item name="wcf.acp.option.minecraft_map_height"><![CDATA[Höhe]]></item>
+		<item name="wcf.acp.option.minecraft_map_height.description"><![CDATA[Geben Sie die Höhe der Karte ein.]]></item>
+		
+		<item name="wcf.acp.option.minecraft_map_online_check"><![CDATA[Online-Status der Karte überprüfen]]></item>
+		<item name="wcf.acp.option.minecraft_map_online_check.description"><![CDATA[]]></item>
+		<item name="wcf.acp.option.minecraft_map_fqdn"><![CDATA[FQDN]]></item>
+		<item name="wcf.acp.option.minecraft_map_fqdn.description"><![CDATA[Beispiel: map.minecraft.net]]></item>
+		<item name="wcf.acp.option.minecraft_map_port"><![CDATA[Port]]></item>
+		<item name="wcf.acp.option.minecraft_map_port.description"><![CDATA[Beispiel: 80 oder 8123]]></item>
+		<!-- /page -->
+	</category>
+	
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.category.user.managepages"><![CDATA[Seitenverwaltung]]></item>
+		<item name="wcf.acp.group.option.category.user.managepages.description"><![CDATA[Zum Verwalten Ihrer Seiten.]]></item>
+		<item name="wcf.acp.group.option.user.managepages.canViewMinecraftMap"><![CDATA[Kann Minecraft Karte sehen]]></item>
+		<item name="wcf.acp.group.option.user.managepages.canViewMinecraftMap.description"><![CDATA[Mitglieder dieser Benutzergruppe können die Minecraft Karte sehen.]]></item>
+	</category>
+
+	<category name="wcf.header.menu">
+		<item name="wcf.header.menu.minecraft.map"><![CDATA[Karte]]></item>
+	</category>
+	
+	<category name="wcf.minecraft">
+		<item name="wcf.minecraft.map.title"><![CDATA[Minecraft Karte]]></item>
+		<item name="wcf.minecraft.map.description"><![CDATA[]]></item>
+		<item name="wcf.minecraft.map.url"><![CDATA[Karte: ]]></item>
+		<item name="wcf.minecraft.map.error"><![CDATA[{if MINECRAFT_MAP_URL && $checkMinecraftMapOnline==false}Die Karte ist zur Zeit nicht erreichbar.{else}Die Karte wurde noch nicht eingerichtet.{/if}]]></item>
+	</category>
+	
+	<category name="wcf.usersOnline">
+		<item name="wcf.usersOnline.location.minecraft.map"><![CDATA[<a href="index.php?page=MinecraftMap{SID_ARG_2ND}">Minecraft Karte</a>]]></item>
+	</category>
+</language>

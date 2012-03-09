@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!-- $Id: groupoptions.xml 1903 2012-03-06 01:05:37Z TobiasH87 $ -->
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com/XSD/group-options.xsd">
+	<import>
+		<categories>
+			<category name="user.managepages">
+				<parent>user</parent>
+			</category>
+		</categories>
+		<options>
+			<option name="user.managepages.canViewMinecraftMap">
+				<categoryname>user.managepages</categoryname>
+				<optiontype>boolean</optiontype>
+				<defaultvalue>0</defaultvalue>
+				<options>module_minecraft_map</options>
+			</option>
+		</options>
+	</import>
+</data>
